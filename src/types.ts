@@ -43,6 +43,10 @@ declare global {
     };
   }
 
+  interface HTMLCanvasElement {
+    captureStream(frameRate?: number): MediaStream;
+  }
+
   interface MediaDevices {
     getDisplayMedia(constraints: MediaStreamConstraints): Promise<MediaStream>;
   }
